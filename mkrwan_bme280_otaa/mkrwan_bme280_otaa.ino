@@ -16,14 +16,14 @@ unsigned int TiempoTx = 60000;  //Transmision cada 60 segundos
 
 //Claves de acceso a red TTN OTAA
 
-String appEui = "70B3D57ED001673D";
-String appKey = "D14EF5777E04109A0BD501433D6311EF";
+String appEui = "xxxxxxxxxxxxxxxx";
+String appKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
 //Claves de acceso a red TTN ABP
 
-String devAddr = "26011DF3";
-String nwkSKey = "48EA906977892B2708E286FE60BB2703";
-String appSKey = "769055171240222DAA2E712E48E729A0";
+String devAddr = "xxxxxxxxxxx";
+String nwkSKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+String appSKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
 void setup() {
 
