@@ -16,14 +16,14 @@ LoRaModem modem;
 
 //Claves de acceso a red TTN OTAA
 
-String appEui = "70B3D57ED001673D";
-String appKey = "D14EF5777E04109A0BD501433D6311EF";
+String appEui = "xxxxxxxxxxxxxxxxxx";
+String appKey = "xxxxxxxxxxxxxxxxxx";
 
 //Claves de acceso a red TTN ABP
 
-String devAddr = "26011DF3";
-String nwkSKey = "48EA906977892B2708E286FE60BB2703";
-String appSKey = "769055171240222DAA2E712E48E729A0";
+String devAddr = "xxxxxxxxxxxxxxxxxx";
+String nwkSKey = "xxxxxxxxxxxxxxxxxx";
+String appSKey = "xxxxxxxxxxxxxxxxxx";
 
 void setup() {
 
@@ -34,8 +34,8 @@ void setup() {
   modem.begin(EU868); //Frecuencia europea TTN
   delay(1000);
 
-  //int connected = modem.joinOTAA(appEui, appKey);
-  int connected = modem.joinABP(devAddr, nwkSKey, appSKey);
+  //int connected = modem.joinOTAA(appEui, appKey); //descomentar si quieres usar OTAA 
+  int connected = modem.joinABP(devAddr, nwkSKey, appSKey);  //descomentar si quieres usar ABP
 
 
 
