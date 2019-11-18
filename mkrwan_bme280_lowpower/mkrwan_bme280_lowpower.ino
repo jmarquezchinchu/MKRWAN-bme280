@@ -12,7 +12,7 @@ BME280I2C bme;
 
 LoRaModem modem;
 
-
+#define tiempo_tx 60   //tiempo de subida de datos
 
 //Claves de acceso a red TTN OTAA
 
@@ -84,7 +84,7 @@ void loop()
   modem.write(datos, sizeof(datos));
   err = modem.endPacket();
 
-  LowPower.sleep(60000);
+  LowPower.sleep(tiempo_tx * 1000);
 
 
 }
